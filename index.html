@@ -15,26 +15,35 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-    <aside>
-        <h2>Search for a City:</h2>
-        <input type="text" id="city-input" name="city-input">
-        <button type="submit" id="submit-button">Search</button>
-        <br>
-        <!-- search for city + search box + search button + recently searched citites through localStorage-->
-    </aside>
-    <section class="current-weather">
-        <h2 class="city-name"></h2>
-        <ul class="current-info"></ul>
-        <!-- searched city + date + weather icon + temperature + humidity + wind speed -->
-    </section>
-    <section>
-        <!-- 5-day forecast + date + weather icon + temperature + humidity + wind speed -->
-    </section>
+    <div class="container">
+        <div class="row justify-content-start">
+            <aside class="col-4">
+                <h2>Search for a City:</h2>
+                <input type="text" id="city-input" name="city-input">
+                <button type="submit" id="submit-button">Search</button>
+                <br>
+                <ul class="search-history"></ul>
+                <!-- search for city + search box + search button + recently searched citites through localStorage-->
+            </aside>
+            <section class="current-weather col-4">
+                <h2 class="city-name"></h2>
+                <ul class="current-info"></ul>
+                <!-- searched city + date + weather icon + temperature + humidity + wind speed -->
+            </section>
+            <section>
+                <section id="day-two"></section>
+                <section id="day-three"></section>
+                <section id="day-four"></section>
+                <section id="day-five"></section>
+                <section id="day-six"></section>
+                <!-- 5-day forecast + date + weather icon + temperature + humidity + wind speed -->
+            </section>
+        </div>
+    </div>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
