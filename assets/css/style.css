@@ -18,10 +18,17 @@ aside {
     width: 20%;
 }
 
-.current-weather {
+.weather-box {
     border: 3px solid black;
     margin: 10px;
     padding: 10px;
+}
+
+.history-tabs {
+    background-color: lightgray;
+    list-style-type: none;
+    margin: 5px;
+    text-align: center;
 }
 
 #submit-button {
